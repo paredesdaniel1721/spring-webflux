@@ -11,6 +11,8 @@ import pe.com.baseIdeas.springboot.webflux.app.models.dao.ProductoDao;
 import pe.com.baseIdeas.springboot.webflux.app.models.documents.Producto;
 import reactor.core.publisher.Flux;
 
+import java.util.Date;
+
 @SpringBootApplication
 public class SpringBootWebfluxApplication implements CommandLineRunner {
 
@@ -34,8 +36,11 @@ public class SpringBootWebfluxApplication implements CommandLineRunner {
 				new Producto("HP Impresora 345", 345.99),
 				new Producto("Laptop Dell 763", 763.39),
 				new Producto("Teclado logictec", 264.29))
-		.map(producto -> productoDao.save(producto))
-		.subscribe(i -> logger.info("Insert" + i.toString()));
+		.flatMap(producto -> {
+			producto.setCreateAt(new Date());
+			return productoDao.save(producto);
+		})
+		.subscribe(producto -> logger.info("Insert" + producto.getId() + " " + producto.getNombre()));
 	}
 
 }
