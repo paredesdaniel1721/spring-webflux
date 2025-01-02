@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Spring WebFlux\git\spring-webflux\spring-boot-webflux"/>
 			<item value="D:\Daniel\Spring WebFlux\basesIdeas\spring-boot-webflux"/>
 		</list>
 		<list key="projectNameTemplate">
