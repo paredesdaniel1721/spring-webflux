@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\Daniel\Spring WebFlux\basesIdeas\spring-boot-webflux\.metadata\.plugins\org.eclipse.jdt.core
+795907058.index
+2864438298.index
