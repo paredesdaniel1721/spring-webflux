@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 import pe.com.baseIdeas.springboot.webflux.app.models.dao.ProductoDao;
 import pe.com.baseIdeas.springboot.webflux.app.models.documents.Producto;
 import reactor.core.publisher.Flux;
@@ -16,6 +17,8 @@ import java.util.Date;
 @SpringBootApplication
 public class SpringBootWebfluxApplication implements CommandLineRunner {
 
+	@Autowired
+	private ReactiveMongoTemplate reactiveMongoTemplate;
 	@Autowired
 	private ProductoDao productoDao;
 	
@@ -27,6 +30,8 @@ public class SpringBootWebfluxApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		reactiveMongoTemplate.dropCollection("productos").subscribe();
+
 		Flux.just(new Producto("TV Panasonic Pantalla LCD", 514.89),
 				new Producto("Sony Camara HD Digital", 132.99),
 				new Producto("Apple iPod", 54.79),
