@@ -1,33 +1,33 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+spring-boot-webflux/HELP.md
+spring-boot-webflux/target/
+spring-boot-webflux/!.mvn/wrapper/maven-wrapper.jar
+spring-boot-webflux/!**/src/main/**/target/
+spring-boot-webflux/!**/src/test/**/target/
 
 ### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+spring-boot-webflux/.apt_generated
+spring-boot-webflux/.classpath
+spring-boot-webflux/.factorypath
+spring-boot-webflux/.project
+spring-boot-webflux/.settings
+spring-boot-webflux/.springBeans
+spring-boot-webflux/.sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+spring-boot-webflux/.idea
+spring-boot-webflux/*.iws
+spring-boot-webflux/*.iml
+spring-boot-webflux/*.ipr
 
 ### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+spring-boot-webflux/nbproject/private/
+spring-boot-webflux/nbbuild/
+spring-boot-webflux/dist/
+spring-boot-webflux/nbdist/
+spring-boot-webflux/.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+spring-boot-webflux/!**/src/main/**/build/
+spring-boot-webflux/!**/src/test/**/build/
 
 ### VS Code ###
-.vscode/
+spring-boot-webflux/.vscode/
