@@ -4,6 +4,13 @@ spring-boot-webflux/!.mvn/wrapper/maven-wrapper.jar
 spring-boot-webflux/!**/src/main/**/target/
 spring-boot-webflux/!**/src/test/**/target/
 
+
+spirng-boot-reactor/HELP.md
+spirng-boot-reactor/target/
+spirng-boot-reactor/!.mvn/wrapper/maven-wrapper.jar
+spirng-boot-reactor/!**/src/main/**/target/
+spirng-boot-reactor/!**/src/test/**/target/
+
 ### STS ###
 spring-boot-webflux/.apt_generated
 spring-boot-webflux/.classpath
@@ -13,11 +20,24 @@ spring-boot-webflux/.settings
 spring-boot-webflux/.springBeans
 spring-boot-webflux/.sts4-cache
 
+spirng-boot-reactor/.apt_generated
+spirng-boot-reactor/.classpath
+spirng-boot-reactor/.factorypath
+spirng-boot-reactor/.project
+spirng-boot-reactor/.settings
+spirng-boot-reactor/.springBeans
+spirng-boot-reactor/.sts4-cache
+
 ### IntelliJ IDEA ###
 spring-boot-webflux/.idea
 spring-boot-webflux/*.iws
 spring-boot-webflux/*.iml
 spring-boot-webflux/*.ipr
+
+spirng-boot-reactor/.idea
+spirng-boot-reactor/*.iws
+spirng-boot-reactor/*.iml
+spirng-boot-reactor/*.ipr
 
 ### NetBeans ###
 spring-boot-webflux/nbproject/private/
@@ -25,9 +45,19 @@ spring-boot-webflux/nbbuild/
 spring-boot-webflux/dist/
 spring-boot-webflux/nbdist/
 spring-boot-webflux/.nb-gradle/
-build/
+spring-boot-webflux/build/
 spring-boot-webflux/!**/src/main/**/build/
 spring-boot-webflux/!**/src/test/**/build/
 
+spirng-boot-reactor/nbproject/private/
+spirng-boot-reactor/nbbuild/
+spirng-boot-reactor/dist/
+spirng-boot-reactor/nbdist/
+spirng-boot-reactor/.nb-gradle/
+spirng-boot-reactor/build/
+spirng-boot-reactor/!**/src/main/**/build/
+spirng-boot-reactor/!**/src/test/**/build/
+
 ### VS Code ###
 spring-boot-webflux/.vscode/
+spirng-boot-reactor/.vscode/
